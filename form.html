@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="fstyle.css" />
+  </head>
+  <body>
+    <form onsubmit="verif" action="#">
+      <div class="formcontainer">
+        <div class="titlebg">
+          <h1>Registration Form</h1>
+        </div>
+        <div class="container">
+          <input
+            class="fname"
+            type="text"
+            placeholder="First name"
+            name="fname"
+            required
+          />
+          <br />
+          <br />
+          <input
+            class="lname"
+            type="text"
+            placeholder="Last name"
+            name="lname"
+            required
+          />
+          <br />
+          <br />
+          <input
+            class="mail"
+            type="text"
+            placeholder="E-mail"
+            name="mail"
+            required
+          />
+          <br />
+          <br />
+          <input
+            class="pw"
+            type="password"
+            placeholder="Password"
+            name="psw"
+            required
+          />
+          <br />
+          <br />
+          <div class="ch1">
+            <input type="checkbox" name="ch1" required />
+            <label
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              repellendus pariatur nam iure vero laborum reprehenderit</label
+            >
+          </div>
+          <br />
+          <div class="ch2">
+            <input type="checkbox" name="ch2" required />
+            <label
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              repellendus pariatur nam iure vero laborum reprehenderit</label
+            >
+          </div>
+          <br />
+          <button class="register" type="submit">
+            <strong>Register</strong>
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+  <script>
+   
+    function checkFirstLetterCapital(fname, lname) {
+        var fname = document.getElementById("fname").value;  
+        var lname = document.getElementById("lname").value;  
+      return (
+        fname[0] === fname[0].toUpperCase() &&
+        lname[0] === lname[0].toUpperCase()
+      );
+    }
+            function verifyPassword() {  
+                var pw = document.getElementById("pw").value;  
+                if(pw.length < 8) {  
+                  
+                   return false;  
+                }  
+      
+    }
+  </script>
+</html>

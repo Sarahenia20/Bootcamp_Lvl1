@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SideBar Animation</title>
+  </head>
+  <style>
+    body {
+      margin: 0px;
+    }
+    .sidebar {
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 350px;
+      height: 1000px;
+      background: #cc99ff;
+      transition: transform 2s;
+    }
+    .animation_btn {
+      position: absolute;
+      right: -125px;
+      vertical-align: middle;
+      text-align: center;
+    }
+    .sbclose {
+      transform: translate(-100%);
+    }
+  </style>
+  <body>
+    <div id="sidebar" class="sidebar sbclose">
+      <button onclick="animation()" class="animation_btn" type="button">
+        click for a surprise
+      </button>
+    </div>
+  </body>
+  <script>
+    function animation() {
+      var stretch = document.getElementById("sidebar");
+      if (stretch.className === "sidebar sbclose") {
+        stretch.className = "sidebar";
+      } else {
+        stretch.className = "sidebar sbclose";
+      }
+    }
+  </script>
+</html>

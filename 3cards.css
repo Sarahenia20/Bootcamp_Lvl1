@@ -1,0 +1,27 @@
+    body {
+        background-color: rgb(72, 67, 67);
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .card {
+        width: 250px;
+        background-color: white;
+        border-radius: 15px;
+    }
+    
+    .ls {
+        height: 200px;
+        width: 250px;
+        align-self: center;
+        border-radius: 15px 15px 0px 0px;
+    }
+    
+    .writing {
+        padding: 20px 10px;
+    }

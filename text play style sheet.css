@@ -1,0 +1,21 @@
+img {
+    width: 300px;
+}
+
+h1 {
+    color: violet;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+body {
+    background-color: #9ecde5;
+}
+
+span {
+    text-decoration-line: underline;
+    font-weight: bold;
+    font-style: arial;
+    background-color: plum;
+}
